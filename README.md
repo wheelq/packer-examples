@@ -13,6 +13,10 @@ This is a packer playground for creating AWS AMIs
 - Navigate to example directory
 - launch `bash make.sh`
 
+## Examples
+
+- [dockered-packer-ami-example](https://github.com/wheelq/packer-examples/tree/main/packer-examples/dockered-packer-ami-example)
+
 ### WARNING
 
 Here are examples only, do not use in production
