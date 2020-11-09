@@ -1,0 +1,28 @@
+{
+    "builders": [
+        {
+            "type": "amazon-ebs",
+            "access_key": "",
+            "secret_key": "",
+            "region": "",
+            "source_ami_filter": {
+                "filters": {
+                    "virtualization-type": "hvm",
+                    "name": "amzn2-ami-hvm*",
+                    "root-device-type": "ebs"
+                },
+                "owners": ["137112412989"],
+                "most_recent": true
+            },
+            "instance_type": "t2.micro",
+            "ssh_username": "ec2-user",
+            "ami_name": "packer-example {{ timestamp }}"
+        }
+    ],
+    "provisioners": [
+        {
+            "type": "shell",
+            "script": "/tmp/provision.sh"
+        }
+    ]
+}

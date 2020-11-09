@@ -1,0 +1,4 @@
+docker/docker
+.env
+packer-log*
+*.log
